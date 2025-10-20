@@ -33,3 +33,31 @@ O sistema permite a gestão completa (CRUD) de questões e a interação do usu�
 ```bash
 git clone [https://github.com/SEU_USUARIO/fastapi-quiz-system.git](https://github.com/SEU_USUARIO/fastapi-quiz-system.git)
 cd fastapi-quiz-system
+```
+### 2. Instalar Depedencias
+
+pip install -r requirements.txt
+
+### 3. crie seu arquivo.env: 
+
+cp .env.example .env
+
+# Credenciais de acesso ao PostgreSQL
+DB_USER="NOME-USER-POSTGRE"
+DB_PASSWORD="SENHA-POSTGRE"
+DB_HOST="localhost"
+DB_PORT="5432"
+DB_NAME="NOME-DO-BD-POSTGRE"
+
+DATABASE_URL="postgresql+asyncpg://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}
+
+### 4. execute a api :
+
+uvicorn main:app --reload
+
+A API estará disponível em http://127.0.0.1:8000
+
+📚 Documentação Interativa
+O FastAPI gera automaticamente uma documentação interativa.
+
+![Swagger Imagem](imagem.png)
