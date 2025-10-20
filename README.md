@@ -42,7 +42,6 @@ pip install -r requirements.txt
 
 cp .env.example .env
 
-# Credenciais de acesso ao PostgreSQL
 DB_USER="NOME-USER-POSTGRE"
 DB_PASSWORD="SENHA-POSTGRE"
 DB_HOST="localhost"
