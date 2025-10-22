@@ -41,15 +41,14 @@ pip install -r requirements.txt
 ### 3. crie seu arquivo.env: 
 
 cp .env.example .env
-
+```bash
 DB_USER="NOME-USER-POSTGRE"
 DB_PASSWORD="SENHA-POSTGRE"
 DB_HOST="localhost"
 DB_PORT="5432"
 DB_NAME="NOME-DO-BD-POSTGRE"
-
 DATABASE_URL="postgresql+asyncpg://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}
-
+```
 ### 4. execute a api :
 
 uvicorn main:app --reload
